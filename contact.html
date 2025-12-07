@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Макс Ферстаппен - Контакти</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+      <nav>
+    <ul>
+        <li><a href="index.html#hero-content" class="active">Головна</a></li>
+
+        <li><a href="contact.html">Контакти</a></li>
+    </ul>
+</nav>
+    </header>
+
+    <main>
+        
+        <div class="modal-buttons-wrapper">
+            <a href="#modal-registration" class="modal-opener">Форма реєстрації</a>
+            <a href="#modal-login" class="modal-opener">Форма входу</a>
+        </div>
+        
+        <section id="feedback-section">
+            <h1>Форма зворотного зв'язку</h1>
+            <form action="/submit-form" method="POST" class="contact-form feedback-container">
+                
+                <div class="left-column">
+                    <div class="form-group"><label for="full-name">Ім'я</label><input type="text" id="full-name" name="fullName" required></div>
+                    <div class="form-group"><label for="email">Ел. пошта</label><input type="email" id="email" name="email" required></div>
+                    <div class="form-group">
+                        <label for="subject">Тема повідомлення</label>
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Оберіть тему</option>
+                            <option value="feedback">Відгук про сайт</option>
+                            <option value="suggestion">Пропозиція</option>
+                            <option value="question">Питання</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-button">Відправити</button>
+                </div>
+                
+                <div class="right-column">
+                    <div class="form-group message-group">
+                        <label for="message">Повідомлення</label>
+                        <textarea id="message" name="message" rows="8" minlength="10" required></textarea>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section id="float-example-section" class="clearfix">
+            <h1>Макс Ферстаппен: Ураган, який змінив правила гри</h1>
+            
+            <article>
+                
+                <figure class="float-left-img"> 
+                    <img src="images/pit.jpg" alt="Макс Ферстаппен на піт-стопі">
+                    <figcaption>Агресивна майстерність.</figcaption>
+                </figure>
+
+                <p>Макс Еміліан Ферстаппен – це не просто гонщик, а феномен сучасної Формули-1. Його кар'єра є ідеальним поєднанням **природного таланту**, закладеного в нього сім'єю (батько Йос Ферстаппен був пілотом Формули-1, а мати, Софі Кумпен, була успішною гонщицею картингу), та **агресивної, безкомпромісної майстерності**.</p>
+                
+                <figure class="float-right-img small-float-img"> 
+                    <img src="images/nurb.jpg" alt="Макс Ферстаппен на трасі">
+                    <figcaption>Наймолодший пілот F1.</figcaption>
+                </figure>
+                
+                <p>Він увірвався в еліту автоспорту, розпочавши кар'єру в картінгу у 4,5 роки і ставши наймолодшим пілотом в історії F1 у 2015 році, дебютувавши у віці 17 років і 166 днів. Як точно сказав Дітмар Матешиц (засновник Red Bull): **"Макс — це ураган, який прийшов у Формулу-1 і змінив правила гри"**. Його перемоги та численні титули чемпіона світу є прямим підтвердженням цієї фрази: він втілює нову еру в спорті, де відсутність страху, надзвичайна швидкість і тактична агресія створюють неповторний, домінуючий стиль.</p>
+
+                <div class="clearfix"></div> 
+                
+                <figure class="no-float-img"> 
+                    <img src="images/verstappen.png" alt="Макс Ферстаппен в шоломі">
+                    <figcaption>Шлях до нових рекордів.</figcaption>
+                </figure>
+
+                <p>Макс Ферстаппен вже увійшов в історію як один із найяскравіших і найбільш талановитих гонщиків свого покоління, і його шлях до нових рекордів ще далеко не завершений.</p>
+                
+            </article>
+        </section>
+
+        <section id="positioned-images-section" class="positioned-images-section">
+            <h1>Ефект накладання зображень</h1>
+       <div class="image-stack"> 
+                <img src="images/ffff.jpg" alt="Зображення 1" class="stack-img img-red">
+                <img src="images/fff.webp" alt="Зображення 2" class="stack-img img-blue">
+                <img src="images/ff.jpg" alt="Зображення 3" class="stack-img img-orange">
+            </div> 
+        </section>
+
+        <section id="social-media-links" class="social-media-links">
+            <h2>Посилання на соцмережі</h2>
+            
+            <div class="social-icons-wrapper">
+                <a href="https://www.instagram.com/maxverstappen1/" class="social-icon-link" title="Instagram">
+                    <img src="images/inst.png" alt="Instagram Icon" class="social-icon-img">
+                </a>
+                
+                <a href="https://x.com/max33verstappen" class="social-icon-link" title="X (Twitter)">
+                    <img src="images/X.png" alt="X Icon" class="social-icon-img">
+                </a>
+            </div>
+        </section>
+
+
+        <div id="modal-registration" class="modal large-modal registration-style"> 
+            <div class="modal-content">
+                <a href="#" class="close-button">&times;</a> 
+                <h3>Форма реєстрації</h3>
+                
+                <form id="registration-form" class="registration-form-grid">
+                    
+                    <div class="col-left">
+                        <div class="avatar-placeholder"></div>
+                        <div class="form-group"><label for="reg-name">Ім'я</label><input type="text" id="reg-name" name="name" placeholder="Ім'я" required></div>
+                        <div class="form-group"><label for="reg-surname">Прізвище</label><input type="text" id="reg-surname" name="surname" placeholder="Прізвище"></div>
+                        
+                        <div class="form-group">
+                            <label>Стать</label>
+                            <div class="radio-group">
+                                <input type="radio" id="sex-m" name="sex" value="male" required><label for="sex-m">Чоловіча</label>
+                                <input type="radio" id="sex-f" name="sex" value="female"><label for="sex-f">Жіноча</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group short-field"><label for="reg-age">Вік</label><input type="number" id="reg-age" name="age" min="16" max="99" placeholder="21"></div>
+                        <div class="form-group short-field"><label for="reg-dob">Дата народження</label><input type="date" id="reg-dob" name="dob"></div>
+                    </div>
+                    
+                    <div class="col-right">
+                        <div class="form-group">
+                            <label for="reg-country">Країна проживання</label>
+                            <select id="reg-country" name="country">
+                                <option value="" disabled selected>Оберіть країну проживання</option>
+                                <option value="ua">Україна</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><label for="reg-phone">Номер телефону</label><input type="tel" id="reg-phone" name="phone" placeholder="+38(XXX)XXX-XX-XX"></div>
+                        <div class="form-group"><label for="reg-social">Соцмережа</label><input type="text" id="reg-social" name="social" placeholder="Посилання на соцмережу"></div>
+                        <div class="form-group"><label for="reg-email-main">Електронна пошта</label><input type="email" id="reg-email-main" name="email-main" placeholder="Ел. пошта" required></div>
+                        <div class="form-group"><label for="reg-password-main">Пароль</label><input type="password" id="reg-password-main" name="password-main" placeholder="Пароль" required></div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="reg-agree" name="agree" required>
+                            <label for="reg-agree">Чи згодні Ви з умовами?</label>
+                        </div>
+                        
+                        <div class="form-group button-row">
+                            <button type="submit" class="submit-button">Зареєструватися</button>
+                            <button type="reset" class="reset-button">Відміна</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="modal-login" class="modal small-modal login-style"> 
+            <div class="modal-content">
+                <a href="#" class="close-button">&times;</a> 
+                <h3>Форма входу</h3>
+                <form id="login-form" class="login-form-simple">
+                    <div class="form-group"><label for="login-email">Логін</label><input type="email" id="login-email" name="loginEmail" required></div>
+                    <div class="form-group"><label for="login-password">Пароль</label><input type="password" id="login-password" name="loginPassword" required></div>
+                    <button type="submit" class="submit-button">Вхід</button>
+                </form>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Фан-сайт Макса Ферстаппена</p>
+        <p><small>Усі матеріали призначені виключно для некомерційного використання.</small></p>
+    </footer>
+</body>
+</html>
